@@ -8,7 +8,7 @@ class PHPX
 {
 
   ########################
-  
+
   /**
   *
   */
@@ -18,39 +18,40 @@ class PHPX
   /**
   *
   */
-  
+
   ########################
-  
-  
-  
+
+
+
   #
   #
   #
   #
   #
   #
-  
-  
-  
+
+
+
   ########################
-  
+
   /**
   *
   */
   public static function VALIDATE_url($url) {
     // code...
-    
+
     if (filter_var($url, FILTER_VALIDATE_URL)) {
-    return true;;
-} else {
-    return false;;
+      return true;
+    } else {
+      return false;
+    }
+    /**
+    *
+    */
+
+    ########################
+
+
+
   }
-  /**
-  *
-  */
-  
-  ########################
-
-
-
 }
