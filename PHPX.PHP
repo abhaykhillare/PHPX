@@ -44,6 +44,25 @@ class PHPX
   /**
   *
   */
+  public static function VALIDATE_email($email) {
+    // code...
+
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  /**
+  *
+  */
+
+  ########################
+  ########################
+
+  /**
+  *
+  */
   public static function VALIDATE_IP($IP) {
     // code...
 
