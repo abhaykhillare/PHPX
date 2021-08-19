@@ -44,6 +44,25 @@ class PHPX
   /**
   *
   */
+  public static function VALIDATE_IP($IP) {
+    // code...
+
+    if (filter_var($IP, FILTER_VALIDATE_IP)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  /**
+  *
+  */
+
+  ########################
+  ########################
+
+  /**
+  *
+  */
   public static function VALIDATE_IPlocal($IPlocal) {
     // code...
 
