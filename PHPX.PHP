@@ -4,14 +4,14 @@
 /**
 *
 */
-class PHPX.PHP
+class PHPX
 {
 
   ########################
   /**
   *
   */
-  public function __construct(argument) {
+  public function __construct($argument) {
     // code...
   }
   ########################
