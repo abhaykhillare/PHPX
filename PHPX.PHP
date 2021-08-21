@@ -151,7 +151,7 @@ class PHPX
     // Connecting Mysql With PDO
     try
 		{
-			$this->dbh = new PDO(
+			$this->pdo_conn = new PDO(
 			             "mysql:host=$host;
 			                  dbname=$db", 
 			                         $user, 
