@@ -151,9 +151,16 @@ class PHPX
     // Connecting Mysql With PDO
     try
 		{
-			$this->dbh = new PDO("mysql:host=$this->hostname;dbname=$this->dbName", $this->username, $this->password);
-			/*** echo a message saying we have connected ***/
-			//echo 'Connected to database'; // Test with this string
+			$this->dbh = new PDO(
+			             "mysql:host=$this->hostname;
+			                  dbname=$this->dbName", 
+			                         $this->username, 
+			                         $this->password);
+			/*** 
+			echo a message saying we have connected 
+			***/
+			//echo 'Connected to database'; 
+			// Test with this string
 		}
 		catch(PDOException $e)
 		{
