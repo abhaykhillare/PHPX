@@ -140,5 +140,25 @@ class PHPX
   */
 
   ########################
+  ########################
+  ##--- FUNCTION NO : 7 - MYSQL1 ---##
+
+  /**
+  *
+  */
+  public static function VALIDATE_IPv6($IPV6) {
+    // code...
+
+    if (filter_var($IPV6, FILTER_FLAG_IPV6)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  /**
+  *
+  */
+
+  ########################
 
 }
