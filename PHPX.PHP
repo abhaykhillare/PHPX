@@ -150,7 +150,7 @@ class PHPX
     // code...
     // Connecting Mysql With PDO
     $this->mysql_hostname = $host;
-    $this->mysql_hostname = $db;
+    $this->mysql_dbName = $db;
     $this->mysql_username = $user;
     $this->mysql_password = $pass;
     try
