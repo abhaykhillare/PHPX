@@ -146,16 +146,19 @@ class PHPX
   /**
   *
   */
-  public static function MYSQLI_connect($host, $db, $user, $pass) {
+  public static function DB_connect($host, $db, $user, $pass) {
     // code...
     // Connecting Mysql With PDO
+    $this->mysql_hostname = $host;
+    $this->mysql_hostname = $db;
+    $this->mysql_username = $user;
     try
 		{
-			$this->pdo_conn = new PDO(
-			             "mysql:host=$host;
-			                  dbname=$db", 
-			                         $user, 
-			                         $pass);
+			$this->pdoconn = new PDO(
+			             "mysql:host=$this->hostname;
+			                  dbname=$this->dbName", 
+			                         $this->username, 
+			                         $this->password);
 			/*** 
 			echo a message saying we have connected 
 			***/
