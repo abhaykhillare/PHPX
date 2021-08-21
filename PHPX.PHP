@@ -152,13 +152,14 @@ class PHPX
     $this->mysql_hostname = $host;
     $this->mysql_hostname = $db;
     $this->mysql_username = $user;
+    $this->mysql_password = $pass;
     try
 		{
 			$this->pdoconn = new PDO(
-			             "mysql:host=$this->hostname;
-			                  dbname=$this->dbName", 
-			                         $this->username, 
-			                         $this->password);
+			             "mysql:host=$this->mysql_hostname;
+			                  dbname=$this->mysql_dbName", 
+			                         $this->mysql_username, 
+			                         $this->mysql_password);
 			/*** 
 			echo a message saying we have connected 
 			***/
