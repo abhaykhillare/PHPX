@@ -152,10 +152,10 @@ class PHPX
     try
 		{
 			$this->dbh = new PDO(
-			             "mysql:host=$hostname;
-			                  dbname=$dbName", 
-			                         $username, 
-			                         $password);
+			             "mysql:host=$host;
+			                  dbname=$db", 
+			                         $user, 
+			                         $pass);
 			/*** 
 			echo a message saying we have connected 
 			***/
