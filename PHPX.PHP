@@ -148,12 +148,17 @@ class PHPX
   */
   public static function MYSQLI_connect($host, $db, $user, $pass) {
     // code...
-
-    if (filter_var($IPV6, FILTER_FLAG_IPV6)) {
-      return true;
-    } else {
-      return false;
-    }
+    // Connecting Mysql With PDO
+    try
+		{
+			$this->dbh = new PDO("mysql:host=$this->hostname;dbname=$this->dbName", $this->username, $this->password);
+			/*** echo a message saying we have connected ***/
+			//echo 'Connected to database'; // Test with this string
+		}
+		catch(PDOException $e)
+		{
+			echo __LINE__.$e->getMessage();
+		}
   }
   /**
   *
