@@ -146,7 +146,7 @@ class PHPX
   /**
   *
   */
-  public static function VALIDATE_IPv6($IPV6) {
+  public static function MYSQLI_connect($host, $db, $user, $pass) {
     // code...
 
     if (filter_var($IPV6, FILTER_FLAG_IPV6)) {
