@@ -156,8 +156,8 @@ class PHPX
     try
     {
       $this->pdoconn = new PDO(
-        "mysql:host=$this->mysql_hostname;
-			                  dbname=$this->mysql_dbName",
+        "mysql:host=".$this->mysql_hostname.";
+			                  dbname=".$this->mysql_dbName,
         $this->mysql_username,
         $this->mysql_password);
       /***
