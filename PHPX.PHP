@@ -154,22 +154,21 @@ class PHPX
     $this->mysql_username = $user;
     $this->mysql_password = $pass;
     try
-		{
-			$this->pdoconn = new PDO(
-			             "mysql:host=$this->mysql_hostname;
-			                  dbname=$this->mysql_dbName", 
-			                         $this->mysql_username, 
-			                         $this->mysql_password);
-			/*** 
-			echo a message saying we have connected 
-			***/
-			//echo 'Connected to database'; 
-			// Test with this string
-		}
-		catch(PDOException $e)
-		{
-			echo __LINE__.$e->getMessage();
-		}
+    {
+      $this->pdoconn = new PDO(
+        "mysql:host=$this->mysql_hostname;
+			                  dbname=$this->mysql_dbName",
+        $this->mysql_username,
+        $this->mysql_password);
+      /***
+      echo a message saying we have connected
+      ***/
+      //echo 'Connected to database';
+      // Test with this string
+    }
+    catch(PDOException $e) {
+      echo __LINE__.$e->getMessage();
+    }
   }
   /**
   *
